@@ -6,4 +6,4 @@ class TranslationError extends Error {
   }
 }
 
-export default TranslationError
+module.exports =  TranslationError

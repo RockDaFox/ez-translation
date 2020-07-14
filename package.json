@@ -1,11 +1,17 @@
 {
   "name": "rdf-translation",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple Translation Module",
+  "main": "/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "author": "RockDaFox",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "repository": "https://github.com/RockDaFox/Translation.git"
 }
