@@ -9,7 +9,5 @@
   "author": "RockDaFox",
   "license": "MIT",
   "repository": "https://github.com/RockDaFox/Translation.git",
-  "dependencies": {
-    "axios": "^0.19.2"
-  }
+  "dependencies": {}
 }
