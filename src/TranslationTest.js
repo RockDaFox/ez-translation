@@ -39,8 +39,8 @@ module.exports = {
   },
 
   getMissingKeys: (aFile = '', bFile = '') => {
-    const aObjectFlatten = flatObject(require(aFile))
-    const bObjectFlatten = flatObject(require(bFile))
+    const aObjectFlatten = flatObject(aFile)
+    const bObjectFlatten = flatObject(bFile)
     const missingKeys = {
       a: [],
       b: []

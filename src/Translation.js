@@ -20,8 +20,7 @@ class Translation {
       if (!translation) console.warn(`Translation: "${word}" not found`)
       return translation || ''
     } catch (e) {
-      if (e.code === 'MODULE_NOT_FOUND') throw new TranslationError('Translation file not found')
-      else throw new TranslationError(e.message)
+      throw new TranslationError(e.message)
     }
   }
 }
