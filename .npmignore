@@ -1,0 +1,6 @@
+webpack.config.js
+.idea
+test
+node_modules
+.gitignore
+.travis.yml

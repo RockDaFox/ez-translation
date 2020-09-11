@@ -1,0 +1,18 @@
+{
+  "login-form": {
+    "label": {
+      "email": "E-mail",
+      "password": "Password"
+    },
+    "placeholder": {
+      "email": "yay@gmail.com"
+    },
+    "btn": {
+      "submit": "Submit"
+    }
+  },
+  "navbar": {
+    "signin": "Sign-in",
+    "login": "Login"
+  }
+}

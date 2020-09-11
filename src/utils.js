@@ -2,7 +2,7 @@ function flatObject (object = {}, path = '', start = {}) {
   return Object.keys(object).reduce((acc, current) => {
     const key = path !== '' ? path + '.' + current : current
     if (typeof object[current] === 'object' && !Array.isArray(object[current])) {
-      return this.flatObject(object[current], current, acc)
+      return flatObject(object[current], key, acc)
     } else {
       return {...acc, [key]: object[current]}
     }
@@ -17,7 +17,7 @@ function hasOwnDeepProperty (obj = {}, key = '') {
       return true
     } else {
       props.shift()
-      return this.hasOwnDeepProperty(obj[current], props.join('.'))
+      return hasOwnDeepProperty(obj[current], props.join('.'))
     }
   }
   return false

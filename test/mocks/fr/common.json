@@ -1,0 +1,21 @@
+{
+  "login-form": {
+    "label": {
+      "email": "E-mail",
+      "password": "Mot de passe"
+    },
+    "placeholder": {
+      "email": "yay@gmail.com"
+    },
+    "btn": {
+      "submit": "Envoyer"
+    }
+  },
+  "navbar": {
+    "signin": "S'inscrire",
+    "login": "Connexion"
+  },
+  "cta": {
+    "play": "Jouer !"
+  }
+}
