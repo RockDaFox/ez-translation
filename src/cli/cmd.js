@@ -17,7 +17,7 @@ if (command === 'check') {
 
     TranslationChecks.getMissingKeys(files, keyList).then(result => {
         if (args.file) {
-            fs.writeFile('compare_report.json', JSON.stringify(result, null, 4), err => {
+            fs.writeFile(`${args.file}.json`, JSON.stringify(result, null, 4), err => {
                 if (err) return console.log(err)
             })
         } else {

@@ -15,7 +15,7 @@ npm i ez-translation
 
 ### Basic
 
-Create a translation object (can be a .json)
+Create a translation object (can be a .json file)
 
 ```js
 const myTranslation = {
@@ -32,7 +32,6 @@ Add to your code :
 
 ```js
 import {Translation} from "ez-translation";
-// you can import your json file or object
 
 
 const translation = new Translation(myTranslation)
@@ -44,7 +43,20 @@ translation.t('login-form.label.email') // "E-mail"
 
 There is also a cli interface !
 
-(currently in test)
+To test if there is no missing keys in your translation files
+
+```bash
+npx ezt check file1 file2 file3 --file=report
+```
+
+--file=myfile is optionnal. It will generate a .json file with all diffs.
+By default a console.log output is displayed
+
+Example:
+```bash
+npx ezt check /public/translation/en/common.json /public/translation/fr/common.json --file=report
+```
+
 
 
 
