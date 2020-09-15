@@ -26,5 +26,12 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
-  "types": "types/index.d.ts"
+  "types": "types/index.d.ts",
+  "keywords": [
+    "translation",
+    "translate",
+    "i18n",
+    "internationalization",
+    "cli"
+  ]
 }

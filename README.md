@@ -52,9 +52,11 @@ npx ezt check file1 file2 file3 --file=report
 --file=myfile is optionnal. It will generate a .json file with all diffs.
 By default a console.log output is displayed
 
-Example:
+You can also name your file (optionnal) by passing a key like --mykey=myfile
+
+Full example:
 ```bash
-npx ezt check /public/translation/en/common.json /public/translation/fr/common.json --file=report
+npx ezt check --en=/public/translation/en/common.json --fr=/public/translation/fr/common.json --file=report
 ```
 
 
